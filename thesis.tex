@@ -1,0 +1,152 @@
+\documentclass[preprint,MD,numbers,times,AutoFakeBold]{cumtthesis}
+\usepackage{fontspec}
+\usepackage{textcomp, gensymb}
+
+\setmainfont{Times New Roman}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{color}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage[a4paper,left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usetikzlibrary{matrix,calc,shapes,backgrounds,patterns,positioning,decorations.pathreplacing}
+%=================================== 数学符号 =================================%
+\newcommand{\rtn}{\mathrm{\mathbf{R}}}
+\newcommand{\N}{\mathrm{\mathbf{N}}}
+\newcommand{\AS}{~\mathrm{a.s.}}
+\newcommand*{\PR}{\mathrm{\mathbf{P}}}
+\newcommand*{\EX}{\mathrm{\mathbf{E}}}
+\newcommand*{\dif}{\,\mathrm{d}}
+\newcommand*{\F}{\mathcal{F}}
+\newcommand*{\prs}{\dif\PR-\mathrm{a.s.}}
+\newcommand*{\pts}{\dif\PR\times\dif t-\mathrm{a.e.}}
+\newcommand{\Ito}{It\^{o}}
+\newcommand{\tT}[1][0]{[#1,T]}
+\newcommand{\intT}[2][T]{\int^{#1}_{#2}}
+\newcommand{\s}{\mathcal{S}}
+\newcommand{\me}{\mathrm{e}}
+\newcommand{\one}[1]{{\bf 1}_{#1}}
+\newcommand{\Mm}{{\rm M}}
+\newcommand{\circled}[2][]{\tikz[baseline=(char.base)]
+    {\node[shape = circle, draw, inner sep = 1pt]
+    (char) {\phantom{\ifblank{#1}{#2}{#1}}};%
+    \node at (char.center) {\makebox[0pt][c]{#2}};}}
+\robustify{\circled}
+\setlength{\intextsep}{10.0pt plus 2.0pt minus 2.0pt}
+
+
+\floatname{algorithm}{算法}
+%\newcommand\forthsection[1]{\noindent \S #1}
+\renewcommand{\algorithmicrequire}{ \textbf{输入:}} %Use Input in the format of Algorithm  
+\renewcommand{\algorithmicensure}{ \textbf{输出:}} %UseOutput in the format of Algorithm
+\renewcommand\theequation{\arabic{chapter}-\arabic{equation}}
+\renewcommand{\thealgorithm}{\arabic{chapter}-\arabic{algorithm}}
+% \let\oldcite=\cite
+% \renewcommand\cite[1]{
+%   \textsuperscript{\oldcite{#1}}
+% }
+\DeclareMathOperator*{\sgn}{sgn}
+%=================================== 数学符号 =================================%
+%=================================== Code Style ==============================%
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\normalsize\ttfamily},
+  numbers=left,
+  frame=L,
+  numberstyle=\tiny\color{mygray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{mygreen},
+  stringstyle=\color{mymauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  framextopmargin=2pt,framexbottommargin=2pt,abovecaptionskip=-3pt,belowcaptionskip=3pt,  
+  xleftmargin=1em, % 设定listing左右的空白
+}
+
+\begin{document}
+\input{tex/frontinfo}
+
+\input{tex/frontmatter}
+
+
+
+%--------插入中文目录
+\tableofcontents
+%--------插入英文目录
+\tableofecontents
+
+% --------插入图清单
+\listoffigures
+% --------插入表清单
+\listoftables
+
+% --------插入变量注释表
+\begin{notation}[2.5cm]
+\item[$min\_s$] 最小支持度
+\item[$min\_c$] 最小置信度
+\item[$R$] 空间邻近关系
+\item[$row\_instance$]  行实例
+\item[$table\_instance$] 表实例
+\item[$PR(c,f_i)$] 空间参与率
+\item[$PI(c)$] 空间参与度
+\item[$min\_prev$] 最小参与度
+\item[$\delta_i$] 流入量
+\item[$\omega_i$] 流出量
+\item[$\psi_i$] 流入流出比
+\item[$Q$] 模块值
+\item[$\Delta Q$] 模块增益值
+\end{notation}
+
+%================================== 正文开始 ==================================%
+
+\mainmatter
+% 写新章节后必须在这里include tex文件，否则无法编译
+\include{tex/chap1}
+\include{tex/chap2}
+\include{tex/chap3}
+\include{tex/chap4}
+
+\backmatter
+
+% 参考文献格式使用cumt.bst
+\bibliographystyle{biblio/cumt}
+\bibliography{biblio/RefExam}
+
+%\include{tex/resume}
+
+\GuanJianCi{浮选,旋流,分选机理,浮选动力学,矿物分选}
+\BingLieTiMing{Analysis and Data Mining about Spatial Data of Sina Weibo Based on Spatial-Spark}
+\LunWenYuZhong{中文}
+\XueHao{TS14160005}
+\PeiYangDanWeiDaiMa{10290}
+\PeiYangDanWeiDiZhi{江苏省徐州市}
+\XueZhi{四年}
+\LunWenTiJiaoRiQi{2022 年 6 月}
+\DaBianWeiYuanHuiChengYuan{王永波,杨化超,陈国良,刘志平}
+\LunWenZiZhu{无}
+%\XueWeiShouYuDanWeiMingCheng{}
+%\XueWeiShouYuDanWeiDaiMa{}
+%\XueWeiJiBie{}
+%\LunWenTiMing{}
+%\PeiYangDanWeiMingCheng{}
+%\YouBian{}
+%\XueWeiShouYuNian{}
+
+% \makebackcover
+%\printindex
+\clearpage
+\end{document}
