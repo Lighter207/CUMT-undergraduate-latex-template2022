@@ -1,3 +1,20 @@
 \chapter{浮选柱实验研究}{Experiment Research of Column Flotation}
 \section{浮选柱研究现状}{Present Research of Column Flotation}
-
+\begin{algorithmic}
+    \BeginBox
+        \Require $n \geq 0$
+        \Ensure $y = x^n$
+        \State $y \Leftarrow 1$
+        \State $X \Leftarrow x$
+        \State $N \Leftarrow n$
+        \While{$N \neq 0$}
+        \If{$N$ is even}
+        \State $X \Leftarrow X \times X$
+        \State $N \Leftarrow \frac{N}{2} $  \Comment{This is a comment}
+        \ElsIf{$N$ is odd}
+        \State $y \Leftarrow y \times X$
+        \State $N \Leftarrow N - 1$
+        \EndIf
+        \EndWhile
+    \EndBox
+\end{algorithmic}

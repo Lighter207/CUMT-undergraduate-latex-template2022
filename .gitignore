@@ -1,0 +1,17 @@
+#屏蔽Latex模板可能生成的一些内容
+
+*.code-workspace
+*.bcf
+*.xml
+*.xdv
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.spl
+*.toc
+*.toe
+*.gz

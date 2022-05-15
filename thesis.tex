@@ -9,8 +9,8 @@
 \usepackage{tikz}
 \usepackage{etoolbox}
 \usepackage{color}
-\usepackage{algorithm}
-\usepackage{algorithmic}
+% 使用更新的伪代码包写法
+\usepackage{algpseudocodex}
 \usepackage{float}
 \usepackage{rotating}
 \usepackage{booktabs}
@@ -42,16 +42,10 @@
 \setlength{\intextsep}{10.0pt plus 2.0pt minus 2.0pt}
 
 
-\floatname{algorithm}{算法}
-%\newcommand\forthsection[1]{\noindent \S #1}
-\renewcommand{\algorithmicrequire}{ \textbf{输入:}} %Use Input in the format of Algorithm  
-\renewcommand{\algorithmicensure}{ \textbf{输出:}} %UseOutput in the format of Algorithm
-\renewcommand\theequation{\arabic{chapter}-\arabic{equation}}
-\renewcommand{\thealgorithm}{\arabic{chapter}-\arabic{algorithm}}
-% \let\oldcite=\cite
-% \renewcommand\cite[1]{
-%   \textsuperscript{\oldcite{#1}}
-% }
+\let\oldcite=\cite
+\renewcommand\cite[1]{
+  \textsuperscript{\oldcite{#1}}
+}
 \DeclareMathOperator*{\sgn}{sgn}
 %=================================== 数学符号 =================================%
 %=================================== Code Style ==============================%

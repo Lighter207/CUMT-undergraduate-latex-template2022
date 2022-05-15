@@ -56,6 +56,7 @@ Vscode中的拓展[LaTex Workshop官方文档](https://github.com/James-Yu/LaTeX
 
 # LaTex 入门语法
 请查看[overleaf30分钟入门文档](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+针对计算机专业伪代码编写，在这里我决定使用较新的algpseudocodex包。具体使用方法可以查看该包的[CTAN页面](https://ctan.org/pkg/algpseudocodex)
 
 # 本项目还存在的问题
 1. 英文摘要标题的Arial字体无法加粗，所以使用了New Times Roman字体加粗，看起来也算是差不多吧，不细看的话。

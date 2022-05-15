@@ -1,0 +1,11 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "out/thesis.xdv" "out/thesis.pdf" "out/thesis" 0
+  "out/thesis.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "out/thesis.pdf"
+["xelatex"] 0 "thesis.tex" "out/thesis.xdv" "thesis" 0
+  "out/thesis.aux" 1648883960 34 3985256e7290058c681f74d7a3565a19 ""
+  "thesis.tex" 0 -1 0 ""
+  (generated)
+  "out/thesis.log"
+  "out/thesis.xdv"
