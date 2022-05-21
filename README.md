@@ -26,19 +26,16 @@ Vscode中的拓展[LaTex Workshop官方文档](https://github.com/James-Yu/LaTeX
     ]
 
 "latex-workshop.latex.tools": [
-    {
-        "name": "xelatexmk",
-        "command": "latexmk",
-        "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "-xelatex",
-            "-outdir=%OUTDIR%",
-            "%DOC%"
-        ],
-        "env": {}
-    },
+      {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+     },
 ]
 ```
 3. 解决可能出现的字体问题
