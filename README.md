@@ -1,5 +1,5 @@
 # 说明
-本项目为非官方矿大本科毕业论文latex版本。改编于[2021年的类似项目](https://github.com/LuXiwen1999/cumtthesis/)。感谢矿大各位学长学姐的贡献，让这个项目逐步完善了起来。
+本项目为非官方矿大本科毕业论文latex版本。改编于[2021年的类似项目](https://github.com/LuXiwen1999/cumtthesis/)。感谢矿大各位学长学姐的贡献，让这个项目逐步完善了起来。有问题请在issues中提出。
 
 2022版本比起2021版本，修复了一些错误，使其适配于windows10下vscode编辑器的使用。
 
@@ -52,11 +52,14 @@ Vscode中的拓展[LaTex Workshop官方文档](https://github.com/James-Yu/LaTeX
 4. 使用Vscode插件编译文档
 在安装好LaTex Workshop插件后左栏应该会显示该插件的图标，在修改好配置文件后，可以看到出现了我们此前定义的`xelatex -> bibtex -> xelatex *2 `的选项。点击就可以编译。其他具体使用设定细节请查看此插件官方文档。
 
-**注意：编译时不要用别的pdf阅览器浏览文件，会导致无法写入而编译出错。**
+**注意：编译时不要用别的pdf阅览器浏览文件，会导致无法同时读写，无法将变化写入文件而导致编译出错。**
 
 # LaTex 入门语法
-请查看[overleaf30分钟入门文档](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
-针对计算机专业伪代码编写，在这里我决定使用较新的algpseudocodex包。具体使用方法可以查看该包的[CTAN页面](https://ctan.org/pkg/algpseudocodex)
+1. 请查看[overleaf30分钟入门文档](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+2. 针对计算机专业伪代码编写，在这里我决定使用较新的algpseudocodex包。具体使用方法可以查看该包的[CTAN页面](https://ctan.org/pkg/algpseudocodex)
+
+# 文献管理工具（使用Zotero)
+[zotero中文文献引用抓取插件](https://github.com/l0o0/translators_CN)
 
 # 本项目还存在的问题
 1. 英文摘要标题的Arial字体无法加粗，所以使用了New Times Roman字体加粗，看起来也算是差不多吧，不细看的话。
